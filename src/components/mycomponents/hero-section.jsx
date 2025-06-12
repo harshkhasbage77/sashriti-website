@@ -1,7 +1,7 @@
 import { AuroraTextDemo } from "@/components/mycomponents/heading";
 import { DotPattern } from "@/components/magicui/dot-pattern";
 import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
-import { MoveRight, ArrowRightIcon } from "lucide-react";
+import { MoveRight, ArrowRightIcon, MoveRightIcon } from "lucide-react";
 import { RainbowButton } from "@/components/magicui/rainbow-button";
 import Link from "next/link";
 
@@ -26,7 +26,7 @@ export function HeroSection() {
               text-gray-700 items-center gap-2">
                 <span className="text-amber-400 fill-amber-400">★</span>
                 Explore Our Process
-                <MoveRight className="w-4 h-4 ml-0 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
+                <ArrowRightIcon className="w-4 h-4 ml-0 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
               </AnimatedShinyText>
             </button>
           </Link>

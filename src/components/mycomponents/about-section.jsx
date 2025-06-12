@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 export function AboutSection() {
   return (
-    <section className="py-16 px-4">
+    <section id="about" className="py-16 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-center mb-12">
           <div className="group relative inline-flex w-fit items-center justify-center rounded-full px-4 py-1.5 shadow-[inset_0_-8px_10px_#8fdfff1f] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-5px_10px_#8fdfff3f] mb-12">

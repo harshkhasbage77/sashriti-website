@@ -27,17 +27,20 @@ import { NeonGradientCard } from "@/components/magicui/neon-gradient-card";
 import { HeroSection } from "@/components/mycomponents/hero-section";
 import { AboutSection } from "@/components/mycomponents/about-section";
 import { ContactSection } from "@/components/mycomponents/contact-section";
+import { Navbar } from "@/components/mycomponents/navbar";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="min-h-screen scroll-smooth">
+      <Navbar />
       <ScrollProgress />
-      <SmoothCursor />
+      {/* <SmoothCursor /> */}
       
       <HeroSection />
 
       {/* Quick Stats Section */}
-      <section className="py-16 px-4 bg-black-50">
+      <section id="quickstats" className="py-16 px-4 bg-black-50">
         <div className="max-w-7xl mx-auto">
           <Marquee className="py-4 " pauseOnHover>
             <div className="flex gap-4">
@@ -184,7 +187,7 @@ export default function Home() {
       </section>
 
       {/* Why Now Section */}
-      <section className="py-16 px-4">
+      <section id="whynow" className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-center mb-12">
             <div className="group relative inline-flex w-fit items-center justify-center rounded-full px-4 py-1.5 shadow-[inset_0_-8px_10px_#8fdfff1f] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-5px_10px_#8fdfff3f]">
@@ -283,7 +286,7 @@ export default function Home() {
       </section>
 
       {/* Technology Section */}
-      <section className="py-16 px-4">
+      <section id="technology" className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-center mb-12">
             <div className="group relative inline-flex w-fit items-center justify-center rounded-full px-4 py-1.5 shadow-[inset_0_-8px_10px_#8fdfff1f] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-5px_10px_#8fdfff3f]">
@@ -388,7 +391,7 @@ export default function Home() {
       </section>
 
       {/* Impact Section */}
-      <section className="py-16 px-4">
+      <section id="impact" className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-center mb-12">
             <div className="group relative inline-flex w-fit items-center justify-center rounded-full px-4 py-1.5 shadow-[inset_0_-8px_10px_#8fdfff1f] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-5px_10px_#8fdfff3f]">
@@ -419,10 +422,13 @@ export default function Home() {
                 duration={14}
               /> */}
               <div className="w-full h-48 mb-6 rounded-lg overflow-hidden">
-                <img 
+                <Image 
                   src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?q=80&w=1000" 
                   alt="Environmental impact" 
                   className="w-full h-full object-cover"
+                  width={1000}
+                  height={667}
+                  priority
                 />
               </div>
               <SparklesText 
@@ -449,10 +455,13 @@ export default function Home() {
                 duration={14}
               /> */}
               <div className="w-full h-48 mb-6 rounded-lg overflow-hidden">
-                <img 
+                <Image 
                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000" 
                   alt="Economic impact" 
                   className="w-full h-full object-cover"
+                  width={1000}
+                  height={667}
+                  priority
                 />
               </div>
               <SparklesText 
@@ -479,10 +488,13 @@ export default function Home() {
                 duration={14}
               /> */}
               <div className="w-full h-48 mb-6 rounded-lg overflow-hidden">
-                <img 
+                <Image 
                   src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1000" 
                   alt="Strategic impact" 
                   className="w-full h-full object-cover"
+                  width={1000}
+                  height={667}
+                  priority
                 />
               </div>
               <SparklesText 
@@ -508,7 +520,7 @@ export default function Home() {
       </section>
 
       {/* Team Section */}
-      <section className="py-16 px-4">
+      <section id="team" className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-center mb-12">
             <div className="group relative inline-flex w-fit items-center justify-center rounded-full px-4 py-1.5 shadow-[inset_0_-8px_10px_#8fdfff1f] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-5px_10px_#8fdfff3f]">
@@ -579,7 +591,7 @@ export default function Home() {
       {/* <Particles /> */}
 
       {/* Investors Section */}
-      <section className="py-16 px-4 h-full">
+      <section id="investors" className="py-16 px-4 h-full">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-center mb-12">
             <div className="group relative inline-flex w-fit items-center justify-center rounded-full px-4 py-1.5 shadow-[inset_0_-8px_10px_#8fdfff1f] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-5px_10px_#8fdfff3f]">
