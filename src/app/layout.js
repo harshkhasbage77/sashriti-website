@@ -21,7 +21,11 @@ export default function RootLayout({ children }) {
     <html 
     bbai-tooltip-injected="true"
     lang="en"
-    className="dark">
+    className="dark"
+    >
+      <head>
+        <link rel="icon" href="/favicon.png" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

@@ -30,9 +30,9 @@ import { ContactSection } from "@/components/mycomponents/contact-section";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      {/* <ScrollProgress /> */}
-      {/* <SmoothCursor /> */}
+    <main className="min-h-screen scroll-smooth">
+      <ScrollProgress />
+      <SmoothCursor />
       
       <HeroSection />
 
@@ -70,7 +70,7 @@ export default function Home() {
       <AboutSection />
 
       {/* Solution Section */}
-      <section className="py-16 px-4">
+      <section id="solution" className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-center mb-12">
             <div className="group relative inline-flex w-fit items-center justify-center rounded-full px-4 py-1.5 shadow-[inset_0_-8px_10px_#8fdfff1f] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-5px_10px_#8fdfff3f]">
@@ -607,15 +607,17 @@ export default function Home() {
             <p className="mb-2 pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">We&apos;re raising smart capital.</p>
             <Globe />
             <p className="text-gray-200 mb-8">Looking for partners who understand deep-tech, materials, and sustainability.</p>
-            <ShimmerButton 
-              shimmerColor="#ffffff"
-              shimmerSize="0.1em"
-              shimmerDuration="2.5s"
-              className="text-lg font-semibold justify-self-center dark:text-white/75"
-            >
-              Request Pitch Deck
-              <Send className="ml-2 mb-1"/>
-            </ShimmerButton>
+            <a href="mailto:contact@sashriti.com" target="blank" className="inline-block">
+              <ShimmerButton 
+                shimmerColor="#ffffff"
+                shimmerSize="0.1em"
+                shimmerDuration="2.5s"
+                className="text-lg font-semibold justify-self-center dark:text-white/75"
+              >
+                Request Pitch Deck
+                <Send className="ml-2 mb-1"/>
+              </ShimmerButton>
+            </a>
           </div>
         </div>
       </section>
