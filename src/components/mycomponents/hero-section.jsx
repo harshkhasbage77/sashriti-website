@@ -8,7 +8,7 @@ export function HeroSection() {
   return (
     <section className="relative flex flex-col items-center justify-center min-h-screen py-20 px-4 overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-gradient-to-b from-gray-100/30 to-transparent rounded-full blur-3xl" />
-      <DotPattern
+      {/* <DotPattern
         width={20}
         height={20}
         cx={1}
@@ -16,7 +16,7 @@ export function HeroSection() {
         cr={1}
         className="text-gray-100/30"
         glow={true}
-      />
+      /> */}
       <div className="relative z-10">
         <div className="flex justify-center gap-4 mt-10">
           <button className="group p-2 rounded-full border border-gray-300 bg-neutral-100 text-xs text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/30 dark:bg-neutral-800 dark:hover:bg-neutral-700 items-center">

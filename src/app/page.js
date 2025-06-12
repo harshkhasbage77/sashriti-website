@@ -31,7 +31,7 @@ import { ContactSection } from "@/components/mycomponents/contact-section";
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <ScrollProgress />
+      {/* <ScrollProgress /> */}
       {/* <SmoothCursor /> */}
       
       <HeroSection />
@@ -41,27 +41,27 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <Marquee className="py-4 " pauseOnHover>
             <div className="flex gap-4">
-              <div className="text-center p-6 bg-gray-800/40 rounded-xl border border-gray-700/50 shadow-sm hover:bg-gray-800/60 hover:border-gray-600/50 transition-all duration-300 w-[350px] group">
+              <MagicCard className="text-center p-6 bg-gray-800/40 rounded-xl border border-gray-700/50 shadow-sm hover:bg-gray-800/60 hover:border-gray-600/50 transition-all duration-300 w-[350px] group">
+                  <div className="flex justify-center mb-4">
+                    <RefreshCcwDotIcon className="w-8 h-8 text-yellow-400 group-hover:text-gray-300 transition-colors" />
+                  </div>
+                  <h3 className="text-4xl font-bold text-gray-300 group-hover:text-white transition-colors">95%+</h3>
+                  <p className="mt-2 text-gray-400 group-hover:text-gray-300 transition-colors">Recovery efficiency (DDR3 RAM benchmark)</p>
+              </MagicCard>
+              <MagicCard className="text-center p-6 bg-gray-800/40 rounded-xl border border-gray-700/50 shadow-sm hover:bg-gray-800/60 hover:border-gray-600/50 transition-all duration-300 w-[350px] group">
                 <div className="flex justify-center mb-4">
-                  <RefreshCcwDotIcon className="w-8 h-8 text-gray-400 group-hover:text-gray-300 transition-colors" />
-                </div>
-                <h3 className="text-4xl font-bold text-gray-300 group-hover:text-white transition-colors">95%+</h3>
-                <p className="mt-2 text-gray-400 group-hover:text-gray-300 transition-colors">Recovery efficiency (DDR3 RAM benchmark)</p>
-              </div>
-              <div className="text-center p-6 bg-gray-800/40 rounded-xl border border-gray-700/50 shadow-sm hover:bg-gray-800/60 hover:border-gray-600/50 transition-all duration-300 w-[350px] group">
-                <div className="flex justify-center mb-4">
-                  <Leaf className="w-8 h-8 text-gray-400 group-hover:text-gray-300 transition-colors" />
+                  <Leaf className="w-8 h-8 text-green-400 group-hover:text-gray-300 transition-colors" />
                 </div>
                 <h3 className="text-4xl font-bold text-gray-300 group-hover:text-white transition-colors">0 toxic emissions</h3>
                 <p className="mt-2 text-gray-400 group-hover:text-gray-300 transition-colors">Zero heat, zero-acid process</p>
-              </div>
-              <div className="text-center p-6 bg-gray-800/40 rounded-xl border border-gray-700/50 shadow-sm hover:bg-gray-800/60 hover:border-gray-600/50 transition-all duration-300 w-[350px] group">
+              </MagicCard>
+              <MagicCard className="text-center p-6 bg-gray-800/40 rounded-xl border border-gray-700/50 shadow-sm hover:bg-gray-800/60 hover:border-gray-600/50 transition-all duration-300 w-[350px] group">
                 <div className="flex justify-center mb-4">
-                  <Factory className="w-8 h-8 text-gray-400 group-hover:text-gray-300 transition-colors" />
+                  <Factory className="w-8 h-8 text-blue-400 group-hover:text-gray-300 transition-colors" />
                 </div>
                 <h3 className="text-4xl font-bold text-gray-300 group-hover:text-white transition-colors">India-first</h3>
                 <p className="mt-2 text-gray-400 group-hover:text-gray-300 transition-colors">Cryo-milling solution for PCB waste</p>
-              </div>
+              </MagicCard>
             </div>
           </Marquee>
         </div>
@@ -104,14 +104,8 @@ export default function Home() {
               </p>
             </div>
 
-            <BentoGrid className="grid-cols-1 md:grid-cols-2 auto-rows-[minmax(200px,auto)] gap-6">
-              <div className="group relative p-6 bg-gray-900 dark:bg-gray-900 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px] hover:bg-gray-800 dark:hover:bg-gray-800 border border-gray-800 dark:border-gray-800 before:absolute before:inset-0 before:rounded-2xl before:bg-gradient-to-r before:from-white/5 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300">
-                <BorderBeam 
-                  size={100}
-                  duration={8}
-                  colorFrom="#ffaa40"
-                  colorTo="#9c40ff"
-                />
+            <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-6">
+              <div className="md:col-span-1 md:row-span-2 group relative p-6 bg-gray-900 dark:bg-gray-900 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px] hover:bg-gray-800 dark:hover:bg-gray-800 border border-gray-800 dark:border-gray-800 before:absolute before:inset-0 before:rounded-2xl before:bg-gradient-to-r before:from-white/5 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300">
                 <h3 className="text-2xl font-semibold mb-6 text-gray-100">Core Process Flow</h3>
                 <ol className="space-y-4 text-gray-300 text-lg">
                   <li className="flex items-center">
@@ -145,14 +139,7 @@ export default function Home() {
                 </ol>
               </div>
 
-              <div className="group relative p-6 bg-gray-900 dark:bg-gray-900 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px] hover:bg-gray-800 dark:hover:bg-gray-800 border border-gray-800 dark:border-gray-800 before:absolute before:inset-0 before:rounded-2xl before:bg-gradient-to-r before:from-white/5 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300">
-                <BorderBeam 
-                  size={100}
-                  duration={8}
-                  colorFrom="#ffaa40"
-                  colorTo="#9c40ff"
-                  delay={2}
-                />
+              <div className="md:col-span-1 md:row-span-1 group relative p-6 bg-gray-900 dark:bg-gray-900 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px] hover:bg-gray-800 dark:hover:bg-gray-800 border border-gray-800 dark:border-gray-800 before:absolute before:inset-0 before:rounded-2xl before:bg-gradient-to-r before:from-white/5 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300">
                 <h3 className="text-xl font-semibold mb-4 text-gray-100">Output Streams</h3>
                 <ul className="space-y-2 text-gray-300">
                   <li className="flex items-center">
@@ -174,14 +161,7 @@ export default function Home() {
                 </ul>
               </div>
 
-              <div className="group relative p-6 bg-gray-900 dark:bg-gray-900 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px] hover:bg-gray-800 dark:hover:bg-gray-800 border border-gray-800 dark:border-gray-800 before:absolute before:inset-0 before:rounded-2xl before:bg-gradient-to-r before:from-white/5 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300">
-                <BorderBeam 
-                  size={100}
-                  duration={8}
-                  colorFrom="#ffaa40"
-                  colorTo="#9c40ff"
-                  delay={4}
-                />
+              <div className="md:col-span-1 md:row-span-1 group relative p-6 bg-gray-900 dark:bg-gray-900 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px] hover:bg-gray-800 dark:hover:bg-gray-800 border border-gray-800 dark:border-gray-800 before:absolute before:inset-0 before:rounded-2xl before:bg-gradient-to-r before:from-white/5 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300">
                 <h3 className="text-xl font-semibold mb-4 text-gray-100">What Makes It Different</h3>
                 <ul className="space-y-2 text-gray-300">
                   <li className="flex items-center">
@@ -198,7 +178,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-            </BentoGrid>
+            </div>
           </div>
         </div>
       </section>
@@ -235,9 +215,9 @@ export default function Home() {
               </h2>
             </div>
 
-            <BentoGrid className="grid-cols-1 md:grid-cols-3 auto-rows-[minmax(200px,auto)] gap-6 font-mono">
+            <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-[minmax(200px,auto)] gap-6 font-mono">
               <div className="group relative p-6 bg-gray-900 dark:bg-gray-900 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px] hover:bg-gray-800 dark:hover:bg-gray-800 border border-gray-800 dark:border-gray-800 before:absolute before:inset-0 before:rounded-2xl before:bg-gradient-to-r before:from-white/5 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300">
-                <BorderBeam 
+                {/* <BorderBeam 
                   size={100}
                   initialOffset={20}
                   className="from-transparent via-yellow-500 to-transparent"
@@ -246,7 +226,7 @@ export default function Home() {
                     stiffness: 60,
                     damping: 20,
                   }}
-                />
+                /> */}
                 <h3 className="text-xl font-semibold mb-4 text-gray-100">E-Waste Volume</h3>
                 <p className="text-gray-300 text-sm">
                   India generates over <span className="text-gray-300 font-semibold">1 million tonnes</span> of e-waste per year.
@@ -254,7 +234,7 @@ export default function Home() {
               </div>
 
               <div className="group relative p-6 bg-gray-900 dark:bg-gray-900 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px] hover:bg-gray-800 dark:hover:bg-gray-800 border border-gray-800 dark:border-gray-800 before:absolute before:inset-0 before:rounded-2xl before:bg-gradient-to-r before:from-white/5 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300">
-                <BorderBeam 
+                {/* <BorderBeam 
                   size={100}
                   initialOffset={20}
                   className="from-transparent via-yellow-500 to-transparent"
@@ -263,7 +243,7 @@ export default function Home() {
                     stiffness: 60,
                     damping: 20,
                   }}
-                />
+                /> */}
                 <h3 className="text-xl font-semibold mb-4 text-gray-100">Policy Pressure</h3>
                 <ul className="space-y-2 text-gray-300 text-sm font-mono">
                   <li className="flex items-center">
@@ -282,7 +262,7 @@ export default function Home() {
               </div>
 
               <div className="group relative p-6 bg-gray-900 dark:bg-gray-900 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-xl hover:translate-y-[-4px] hover:bg-gray-800 dark:hover:bg-gray-800 border border-gray-800 dark:border-gray-800 before:absolute before:inset-0 before:rounded-2xl before:bg-gradient-to-r before:from-white/5 before:to-transparent before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300">
-                <BorderBeam 
+                {/* <BorderBeam 
                   size={100}
                   initialOffset={20}
                   className="from-transparent via-yellow-500 to-transparent"
@@ -291,13 +271,13 @@ export default function Home() {
                     stiffness: 60,
                     damping: 20,
                   }}
-                />
+                /> */}
                 <h3 className="text-xl font-semibold mb-4 text-gray-100">Supply Chain</h3>
                 <p className="text-gray-300 text-sm">
                   Global supply chains for <span className="text-gray-300 font-semibold">critical materials</span> are tightening.
                 </p>
               </div>
-            </BentoGrid>
+            </div>
           </div>
         </div>
       </section>
@@ -434,10 +414,10 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-3 gap-12">
             <div className="group relative p-8 bg-white dark:bg-gray-800 rounded-lg shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:bg-gray-50 dark:hover:bg-gray-700 flex flex-col min-h-[400px]">
-              <ShineBorder 
+              {/* <ShineBorder 
                 shineColor={["#ffaa40", "#9c40ff"]} 
                 duration={14}
-              />
+              /> */}
               <div className="w-full h-48 mb-6 rounded-lg overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?q=80&w=1000" 
@@ -464,10 +444,10 @@ export default function Home() {
               </ul>
             </div>
             <div className="group relative p-8 bg-white dark:bg-gray-800 rounded-lg shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:bg-gray-50 dark:hover:bg-gray-700 flex flex-col min-h-[400px]">
-              <ShineBorder 
+              {/* <ShineBorder 
                 shineColor={["#ffaa40", "#9c40ff"]} 
                 duration={14}
-              />
+              /> */}
               <div className="w-full h-48 mb-6 rounded-lg overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000" 
@@ -494,10 +474,10 @@ export default function Home() {
               </ul>
             </div>
             <div className="group relative p-8 bg-white dark:bg-gray-800 rounded-lg shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] hover:bg-gray-50 dark:hover:bg-gray-700 flex flex-col min-h-[400px]">
-              <ShineBorder 
+              {/* <ShineBorder 
                 shineColor={["#ffaa40", "#9c40ff"]} 
                 duration={14}
-              />
+              /> */}
               <div className="w-full h-48 mb-6 rounded-lg overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1000" 
