@@ -194,7 +194,7 @@ export default function Home() {
                   </li>
                   <li className="flex items-center">
                     <span className="w-2 h-2 rounded-full bg-[#9c40ff] mr-3"></span>
-                    Scalable design for India's decentralised e-waste ecosystem.
+                    Scalable design for India&apos;s decentralised e-waste ecosystem.
                   </li>
                 </ul>
               </div>
@@ -231,7 +231,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4 text-gray-800 dark:text-gray-100">
-                Timing is everything. We're ready.
+                Timing is everything. We&apos;re ready.
               </h2>
             </div>
 
@@ -515,7 +515,7 @@ export default function Home() {
               <ul className="text-gray-600 dark:text-gray-300 text-lg space-y-3">
                 <li className="flex items-start">
                   <span className="text-[#ffaa40] mr-2">•</span>
-                  Reduces India's reliance on imported critical metals
+                  Reduces India&apos;s reliance on imported critical metals
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#ffaa40] mr-2">•</span>
@@ -624,7 +624,7 @@ export default function Home() {
             </div>
           </div>
           <div className="max-w-3xl mx-auto text-center justify-center">
-            <p className="mb-2 pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">We're raising smart capital.</p>
+            <p className="mb-2 pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">We&apos;re raising smart capital.</p>
             <Globe />
             <p className="text-gray-200 mb-8">Looking for partners who understand deep-tech, materials, and sustainability.</p>
             <ShimmerButton 
