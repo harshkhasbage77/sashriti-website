@@ -17,7 +17,7 @@ export const metadata = {
   openGraph: {
     title: "Sashriti - Know The Real Value",
     description: "Protector of wealth",
-    url: "https://sashriti-website.vercel.app", // or your production domain
+    url: "https://sashriti.com/", 
     siteName: "Sashriti",
     images: [
       {
